@@ -1,0 +1,5 @@
+# 网站注释
+baseURL = 'https://zanyan.xyz/'
+languageCode = 'zh-cn'
+title = 'Ciallo~ Hugo'
+theme = 'ananke'

@@ -1,0 +1,7 @@
+# Hugo default output directory
+/public
+
+# Hugo resources cache (加速构建的缓存，也可以忽略)
+/resources/_gen
+
+.hugo_build.lock
