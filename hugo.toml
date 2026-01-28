@@ -3,11 +3,17 @@ languageCode = 'zh-cn'
 title = '我的技术博客'
 theme = 'PaperMod'
 
+[outputs]
+    home = ["HTML", "RSS", "JSON"]
+
 # 必须添加这个，否则 PaperMod 可能会报错
 [params]
-    defaultTheme = "auto" # 自动跟随系统切换黑白主题
+    defaultTheme = "light" # 固定浅色主题（深色模式在后续优化）
     ShowReadingTime = true # 显示阅读时间
-    ShowShareButtons = true # 显示分享按钮
+    ShowShareButtons = false # 禁用分享按钮
+    ShowToc = true # 启用文章目录
+    math = true # 启用数学公式支持（KaTeX）
+    hideCreditText = true # 隐藏页脚版权链接
 
     [params.assets]
         favicon = "./images/logo.svg" # 以后可以设置网页图标
@@ -25,14 +31,21 @@ theme = 'PaperMod'
     # 社交链接配置（GitHub, Email 等）
     [[params.socialIcons]]
         name = "github"
-        url = "https://github.com//user14412"
+        url = "https://github.com/user14412"
 
-    [[menu.main]]
+[[menu.main]]
     name = "文章"
     url = "/posts"
     weight = 1
 
-    [[menu.main]]
-        name = "搜索"
-        url = "/search"
-        weight = 2
+[[menu.main]]
+    name = "搜索"
+    url = "/search"
+    weight = 2
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true  # 允许HTML渲染
+  [markup.highlight]
+    noClasses = false  # 确保语法高亮正常工作

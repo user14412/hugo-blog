@@ -1,10 +1,10 @@
 +++
 date = '2026-01-28T14:09:09+08:00'
 draft = false
-title = 'My First Post'
+title = 'Notes for *Neural Network From Zero to Hero*'
 +++
 
-# Notes for *Neural Network From Zero to Hero*
+大模型课程
 
 auto grad
 makemore
