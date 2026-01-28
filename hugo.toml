@@ -1,5 +1,38 @@
-# 网站注释
-baseURL = 'https://zanyan.xyz/'
+baseURL = 'https://你的域名.netlify.app/' # 记得改成你真实的 Netlify 网址
 languageCode = 'zh-cn'
-title = 'Ciallo~ Hugo'
-theme = 'ananke'
+title = '我的技术博客'
+theme = 'PaperMod'
+
+# 必须添加这个，否则 PaperMod 可能会报错
+[params]
+    defaultTheme = "auto" # 自动跟随系统切换黑白主题
+    ShowReadingTime = true # 显示阅读时间
+    ShowShareButtons = true # 显示分享按钮
+
+    [params.assets]
+        favicon = "./images/logo.svg" # 以后可以设置网页图标
+
+    # 首页显示的个人简介配置
+    [params.profileMode]
+        enabled = true
+        title = "你好，我是..."
+        subtitle = "zanyyan123"
+        imageUrl = "https://avatars.githubusercontent.com/u/87598107?s=400&u=70cc5b899b52c270f072a77e216acb4e3eb464fd&v=4" # 头像链接
+        imageTitle = "我的头像"
+        imageWidth = 120
+        imageHeight = 120
+
+    # 社交链接配置（GitHub, Email 等）
+    [[params.socialIcons]]
+        name = "github"
+        url = "https://github.com//user14412"
+
+    [[menu.main]]
+    name = "文章"
+    url = "/posts"
+    weight = 1
+
+    [[menu.main]]
+        name = "搜索"
+        url = "/search"
+        weight = 2
