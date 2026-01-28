@@ -1,4 +1,4 @@
-baseURL = 'https://你的域名.netlify.app/' # 记得改成你真实的 Netlify 网址
+baseURL = 'https://zanyan.xyz/' # 记得改成你真实的 Netlify 网址
 languageCode = 'zh-cn'
 title = '我的技术博客'
 theme = 'PaperMod'
