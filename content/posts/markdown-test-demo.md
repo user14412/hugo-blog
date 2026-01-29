@@ -1,7 +1,7 @@
 +++
 title = 'Markdown 格式测试 Demo'
 date = '2026-01-28T18:00:00+08:00'
-draft = true
+draft = false
 description = '完整的 Markdown 格式演示：标题、列表、代码、公式、图片、表格等。'
 tags = ['测试','Markdown','Demo']
 categories = ['文档']
