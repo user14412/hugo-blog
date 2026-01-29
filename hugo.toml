@@ -1,6 +1,6 @@
 baseURL = 'https://zanyan.xyz/' # 记得改成你真实的 Netlify 网址
 languageCode = 'zh-cn'
-title = '我的技术博客'
+title = '麦花如雪'
 theme = 'PaperMod'
 
 [outputs]
