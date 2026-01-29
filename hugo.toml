@@ -16,7 +16,7 @@ theme = 'PaperMod'
     hideCreditText = true # 隐藏页脚版权链接
 
     [params.assets]
-        favicon = "./images/logo.svg" # 以后可以设置网页图标
+        favicon = "https://i.imgur.com/3mQeOXJ.png" # 以后可以设置网页图标
 
     # 首页显示的个人简介配置
     [params.profileMode]
