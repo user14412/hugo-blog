@@ -1,4 +1,4 @@
-baseURL = 'https://zanyan.xyz/' # 记得改成你真实的 Netlify 网址
+baseURL = 'https://zanyan.xyz/'
 languageCode = 'zh-cn'
 title = '麦花如雪'
 theme = 'PaperMod'
@@ -6,7 +6,6 @@ theme = 'PaperMod'
 [outputs]
     home = ["HTML", "RSS", "JSON"]
 
-# 必须添加这个，否则 PaperMod 可能会报错
 [params]
     defaultTheme = "light" # 固定浅色主题（深色模式在后续优化）
     ShowReadingTime = true # 显示阅读时间
@@ -21,27 +20,35 @@ theme = 'PaperMod'
     # 首页显示的个人简介配置
     [params.profileMode]
         enabled = true
-        title = "你好，我是..."
-        subtitle = "zanyyan123"
-        imageUrl = "https://avatars.githubusercontent.com/u/87598107?s=400&u=70cc5b899b52c270f072a77e216acb4e3eb464fd&v=4" # 头像链接
+        title = "看来岂是寻常色，浓淡由它冰雪中..."
+        # subtitle = "zanyyan123"
+        # imageUrl = "https://avatars.githubusercontent.com/u/87598107?s=400&u=70cc5b899b52c270f072a77e216acb4e3eb464fd&v=4"
+        imageUrl = "https://i.imgur.com/5SaEVMc.png"
         imageTitle = "我的头像"
         imageWidth = 120
         imageHeight = 120
 
     # 社交链接配置（GitHub, Email 等）
-    [[params.socialIcons]]
-        name = "github"
-        url = "https://github.com/user14412"
+    # [[params.socialIcons]]
+    #     name = "github"
+    #     url = "https://github.com/user14412"
+    # [[params.contact]]
+    #     email = "522025330141@smail.nju.edu.cn"
 
 [[menu.main]]
-    name = "文章"
+    name = "技术"
     url = "/posts"
     weight = 1
 
 [[menu.main]]
+    name = "随笔"
+    url = "/essays"
+    weight = 2
+
+[[menu.main]]
     name = "搜索"
     url = "/search"
-    weight = 2
+    weight = 3
 
 [markup]
   [markup.goldmark]
